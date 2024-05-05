@@ -25,5 +25,13 @@
   [
     "espressif8266",
     "espressif32"
-  ]
+  ],
+  "build": {
+    "srcDir": ".",
+    "srcFilter": "+<*> -<examples> -<test>"
+    "includeDir": ".",
+    "flags": [
+      "-I include",
+      "-I extra"
+    ]
 }
